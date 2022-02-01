@@ -1,8 +1,9 @@
 module.exports = {
-  mode: 'jit',
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/client/components/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+	mode: 'jit',
+	darkMode: 'media',
+	content: ['./src/**/*.{jsx,js,css}'],
+	theme: {
+		extend: {},
+	},
+	plugins: [],
+};
