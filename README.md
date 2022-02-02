@@ -3,9 +3,7 @@
 ## Clone the boilerplate
 
 ```bash
-npx create-next-app your-app --use-npm --example "https://github.com/glazk0/nextjs-tailwindcss.git"
-# or
-npx create-next-app your-app --use-yarn --example "https://github.com/glazk0/nextjs-tailwindcss.git"
+git clone https://github.com/facebook/create-react-app.git your-app-name
 ```
 
 ## Getting Started
