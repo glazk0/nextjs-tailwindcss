@@ -3,7 +3,7 @@
 ## Clone the boilerplate
 
 ```bash
-git clone https://github.com/facebook/create-react-app.git your-app-name
+git clone https://github.com/glazk0/nextjs-tailwindcss.git your-app-name
 ```
 
 ## Getting Started
