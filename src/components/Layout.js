@@ -1,15 +1,17 @@
 import Head from 'next/head';
 
-export default function Main({ children }) {
+export default function Layout({ children }) {
 	return (
-		<div>
+		<>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="description" content="Your site name" />
-				<meta name="author" content="" />
+				<meta name="author" content="glazk0" />
 
 				<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-				<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+				<link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
+
+				<link rel="manifest" href="/manifest.json" />
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@yourname" />
@@ -23,6 +25,6 @@ export default function Main({ children }) {
 				<title>Your site name</title>
 			</Head>
 			{children}
-		</div>
+		</>
 	);
 }

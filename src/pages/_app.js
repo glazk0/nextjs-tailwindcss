@@ -1,8 +1,8 @@
 import '../../styles/globals.css';
 
-import Layout from '../client/layouts/Main';
+import Layout from '../components/Layout';
 
-export default function Website({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
 	return (
 		<Layout>
 			<Component {...pageProps} />
