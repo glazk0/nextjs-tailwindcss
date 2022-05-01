@@ -13,7 +13,7 @@ First, install all dependancies:
 ```bash
 npm install
 # or
-yarn 
+yarn
 ```
 
 Then, run the development server:
