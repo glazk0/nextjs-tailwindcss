@@ -1,44 +1,52 @@
 {
-	"name": "nextjs-tailwindcss",
-	"version": "0.1.0",
-	"description": "A Nextjs & Tailwindcss boilerplate to handle new project in the fastest way possible.",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"prettier": "prettier --write \"**/*.+(js|ts|json)\""
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/glazk0/nextjs-tailwindcss.git"
-	},
-	"keywords": [
-		"Next.js",
-		"Tailwindcss",
-		"Boilerplate"
-	],
-	"author": "glazk0 <hi@glazk0.dev> (https://glazk0.dev/)",
-	"contributors": [],
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/glazk0/nextjs-tailwindcss/issues"
-	},
-	"homepage": "https://github.com/glazk0/nextjs-tailwindcss#readme",
-	"dependencies": {
-		"next": "^12.0.10",
-		"react": "17.0.2",
-		"react-dom": "17.0.2"
-	},
-	"devDependencies": {
-		"autoprefixer": "^10.4.2",
-		"eslint": "8.7.0",
-		"eslint-config-next": "12.0.8",
-		"eslint-config-prettier": "^8.3.0",
-		"postcss": "^8.4.5",
-		"prettier": "^2.5.1",
-		"prettier-plugin-tailwindcss": "^0.1.4",
-		"tailwindcss": "^3.0.15"
-	}
+  "name": "nextjs-tailwindcss",
+  "version": "0.1.0",
+  "description": "A Nextjs & Tailwindcss boilerplate to handle new project in the fastest way possible.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit --incremental false",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "format": "prettier --ignore-path .prettierignore --write .",
+    "format:check": "prettier --ignore-path .prettierignore --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glazk0/nextjs-tailwindcss.git"
+  },
+  "keywords": [
+    "Next.js",
+    "Tailwindcss",
+    "Boilerplate"
+  ],
+  "author": "glazk0 <hi@glazk0.dev> (https://glazk0.dev/)",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glazk0/nextjs-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/glazk0/nextjs-tailwindcss#readme",
+  "dependencies": {
+    "next": "^12.2.5",
+    "next-sitemap": "^3.1.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@glazk0/eslint-config": "^1.0.1",
+    "@glazk0/prettier-config": "^1.0.0",
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.23.0",
+    "eslint-config-next": "12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.4",
+    "tailwindcss": "^3.0.15"
+  }
 }

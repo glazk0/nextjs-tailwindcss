@@ -1,6 +1,10 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
-	reactStrictMode: true,
-	env: {
-		YOUR_ENV_KEY: "I'm a doggo.",
-	},
+  reactStrictMode: true,
+  // Uncoment to add domain whitelist
+  // images: {
+  //   domains: [
+  //     'res.cloudinary.com',
+  //   ],
+  // },
 };
